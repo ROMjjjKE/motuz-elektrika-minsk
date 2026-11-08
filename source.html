@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Исходный код — Мотуз, электрик в Минске</title>
+<style>
+:root{--bg:#1b1b1b;--panel:#232323;--ink:#e8e4de;--mut:#8d857c;--acc:#A6866D;--line:#333}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+header{position:sticky;top:0;z-index:5;background:var(--panel);border-bottom:1px solid var(--line);padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+header b{font:700 15px/1.3 system-ui,sans-serif;color:#fff}
+header span{color:var(--mut);font-size:12.5px}
+button{margin-left:auto;background:var(--acc);color:#1b1b1b;border:0;border-radius:8px;padding:10px 18px;font:700 13.5px/1 system-ui,sans-serif;cursor:pointer}
+button:hover{background:#c09a7d}
+pre{margin:0;padding:18px;white-space:pre;overflow:auto;font-size:13px;line-height:1.55;counter-reset:l}
+code{display:block;white-space:pre}
+</style></head>
+<body>
+<header><b>Исходный код сайта</b><span>index.html · 145 строк · 24 КБ</span><button id="cp">Копировать весь код</button></header>
+<pre><code id="code">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ru&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Электрик в Минске — ИП Мотуз А.П. | Проводка, розетки, щиты под ключ&lt;/title&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Электромонтажные работы в Минске и Минском районе: проводка, розетки, выключатели, светильники, распределительные щиты, штробление. ИП Мотуз А.П., УНП 193557539, на Kufar с 2016. Ответ в течение 3 часов. +375 (29) 654-00-49.&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&amp;family=Golos+Text:wght@400;500;600&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;style&gt;:root{--bg:#F5F2EE;--paper:#FFFFFF;--ink:#262626;--mut:#7A736C;--acc:#A6866D;--accD:#8C6E56;--line:#E4DED6;--dark:#1A1A1A;--soft:#EFEAE3}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:&quot;Golos Text&quot;,system-ui,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;font-size:16.5px;-webkit-font-smoothing:antialiased}h1,h2,h3,.h{font-family:&quot;Onest&quot;,system-ui,sans-serif;letter-spacing:-.02em;line-height:1.12}a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+.top{background:var(--dark);color:#E8E3DC;font-size:12.5px}.top .wrap{display:flex;justify-content:space-between;gap:12px;padding:9px 22px;flex-wrap:wrap;align-items:center}.top .l{letter-spacing:.02em}.top .r{display:flex;gap:18px}.top a:hover{color:#fff}
+header{background:var(--bg);border-bottom:1px solid var(--line)}.hr{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 22px;max-width:1160px;margin:0 auto}.brand b{font-family:&quot;Onest&quot;;font-size:17px;font-weight:700;display:block;line-height:1.15}.brand small{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}nav.m{display:flex;gap:24px}nav.m a{font-size:14px;color:#4A443E}nav.m a:hover{color:var(--accD)}.tel{display:inline-flex;align-items:center;gap:8px;background:var(--dark);color:#fff;font-weight:600;font-size:14.5px;padding:11px 17px;border-radius:8px;transition:.2s}.tel:hover{background:#000}@media(max-width:920px){nav.m{display:none}}
+.hero{padding:44px 0 20px}.hero .g{display:grid;grid-template-columns:1.02fr .98fr;gap:38px;align-items:center}@media(max-width:960px){.hero .g{grid-template-columns:1fr;gap:26px}}
+.kick{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accD);margin-bottom:14px}.hero h1{font-size:clamp(30px,4.4vw,52px);font-weight:700;margin-bottom:16px;color:#1F1C19}.hero p.sub{font-size:16px;line-height:1.65;color:#514B45;max-width:500px;margin-bottom:22px}.acts{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:8px;font-family:inherit;font-weight:600;font-size:15px;padding:14px 20px;border-radius:8px;border:1.5px solid transparent;cursor:pointer;transition:.2s}.btn.p{background:var(--dark);color:#fff}.btn.p:hover{background:#000}.btn.g{background:transparent;border-color:#CFC6BB;color:#2B2724}.btn.g:hover{border-color:var(--acc)}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}@media(max-width:640px){.mini{grid-template-columns:1fr}}.mini div{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:13px 14px}.mini b{display:block;font-family:&quot;Onest&quot;;font-size:14.5px;margin-bottom:3px}.mini span{font-size:12px;color:var(--mut);line-height:1.4}
+.hphoto{position:relative;border-radius:14px;overflow:hidden;background:#E7E1D8}.hphoto img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}.hphoto .badge{position:absolute;right:12px;bottom:12px;background:rgba(255,255,255,.94);border-radius:9px;padding:9px 12px;font-size:11.5px;line-height:1.3;color:#3A342E;box-shadow:0 10px 24px rgba(0,0,0,.14)}.hphoto .badge b{display:block;font-family:&quot;Onest&quot;;font-size:13px}
+.sec{padding:56px 0}.sec.white{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.lbl{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accD);margin-bottom:10px}h2.t{font-size:clamp(24px,3.2vw,36px);font-weight:700;margin-bottom:10px}.sh{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:end;margin-bottom:26px}@media(max-width:820px){.sh{grid-template-columns:1fr;gap:8px}}.sh p{font-size:13.5px;line-height:1.6;color:var(--mut)}
+.calc{display:grid;grid-template-columns:1.15fr .85fr;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 16px 40px rgba(38,38,38,.07)}@media(max-width:880px){.calc{grid-template-columns:1fr}}
+.cL{padding:24px}.cL h3{font-family:&quot;Onest&quot;;font-size:15px;font-weight:600;margin-bottom:4px}.cL .note{font-size:12px;color:var(--mut);margin-bottom:16px}.crow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.crow:last-of-type{border-bottom:none}.crow .nm{font-size:14.5px}.crow .nm span{display:block;font-size:11.5px;color:var(--mut);margin-top:2px}.stepper{display:flex;align-items:center;gap:10px}.stepper button{width:32px;height:32px;border-radius:8px;border:1px solid #D5CCC1;background:#fff;font-size:17px;line-height:1;color:#3A342E;cursor:pointer;transition:.15s;font-family:inherit}.stepper button:hover{border-color:var(--acc);color:var(--accD)}.stepper .val{min-width:26px;text-align:center;font-family:&quot;Onest&quot;;font-weight:600;font-size:15px}
+.togs{margin-top:14px;display:grid;gap:8px}.tog{display:flex;align-items:center;gap:10px;font-size:13px;color:#4A443E;cursor:pointer;user-select:none}.tog input{appearance:none;width:38px;height:22px;border-radius:20px;background:#DED6CB;position:relative;cursor:pointer;transition:.2s;flex:none}.tog input::after{content:&quot;&quot;;position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#fff;transition:.2s}.tog input:checked{background:var(--acc)}.tog input:checked::after{left:19px}
+.cR{background:var(--soft);padding:24px;border-left:1px solid var(--line)}@media(max-width:880px){.cR{border-left:none;border-top:1px solid var(--line)}}.cR .lab{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#8A7F73;margin-bottom:6px}.cR .sum{font-family:&quot;Onest&quot;;font-size:34px;font-weight:700;color:#1F1C19;margin-bottom:14px}.cR .sum small{font-size:14px;font-weight:500;color:var(--mut)}.brk{list-style:none;margin-bottom:14px}.brk li{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;color:#4A443E;padding:6px 0;border-bottom:1px dashed #DED6CB}.brk li:last-child{border-bottom:none}.brk li b{font-weight:600;color:#262626}.cR .go{display:block;width:100%;text-align:center;background:var(--dark);color:#fff;font-weight:600;padding:13px;border-radius:8px;font-family:inherit;font-size:14.5px;transition:.2s}.cR .go:hover{background:#000}.cR .hint{font-size:11px;color:#8A7F73;margin-top:10px;line-height:1.45}
+.srv{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media(max-width:900px){.srv{grid-template-columns:1fr 1fr}}@media(max-width:600px){.srv{grid-template-columns:1fr}}.sc{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px}.sc h3{font-family:&quot;Onest&quot;;font-size:15px;font-weight:600;margin-bottom:6px}.sc p{font-size:12.5px;line-height:1.55;color:var(--mut);margin-bottom:12px}.sc .pr{font-family:&quot;Onest&quot;;font-size:14px;font-weight:600;color:var(--accD)}.srvnote{font-size:12px;color:var(--mut);margin-top:14px;line-height:1.5}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media(max-width:820px){.gal{grid-template-columns:1fr}}.gal figure{border-radius:12px;overflow:hidden;background:#E7E1D8}.gal img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}.gal figcaption{font-size:11.5px;color:var(--mut);padding:9px 11px;background:var(--paper);border-top:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}@media(max-width:560px){.steps{grid-template-columns:1fr}}.st{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:0 8px 20px rgba(38,38,38,.05)}.st .n{font-family:&quot;Onest&quot;;font-size:26px;font-weight:700;color:#DCD3C7;line-height:1;margin-bottom:10px}.st h3{font-family:&quot;Onest&quot;;font-size:14.5px;font-weight:600;margin-bottom:5px}.st p{font-size:12.5px;line-height:1.5;color:var(--mut)}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:center}@media(max-width:860px){.about{grid-template-columns:1fr}}.bgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.bd{background:var(--paper);border:1px solid var(--line);border-radius:11px;padding:15px}.bd b{display:block;font-family:&quot;Onest&quot;;font-size:14.5px;margin-bottom:2px}.bd span{font-size:11.5px;color:var(--mut)}
+.foot{background:var(--dark);color:#EDE7E0;padding:46px 0 24px}.foot .g{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}@media(max-width:860px){.foot .g{grid-template-columns:1fr}}.foot h2{font-size:clamp(23px,3vw,34px);font-weight:600;line-height:1.25;color:#fff;margin-bottom:12px}.foot p{font-size:13.5px;line-height:1.6;color:#B4ADA4;max-width:400px}.ftel{display:flex;flex-direction:column;gap:8px}.ftel a{font-family:&quot;Onest&quot;;font-size:clamp(20px,2.4vw,26px);font-weight:600;color:#fff}.ftel a:hover{color:var(--acc)}.fbtn{display:inline-flex;align-items:center;gap:8px;margin-top:12px;background:var(--acc);color:#1A1A1A;font-weight:600;font-size:14.5px;padding:12px 18px;border-radius:8px;width:max-content}.fbtn:hover{background:#B99A80}.fbot{border-top:1px solid #33302D;margin-top:26px;padding-top:14px;font-size:11.5px;color:#8C857D;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}#wm{position:fixed;right:14px;bottom:14px;z-index:75;background:rgba(26,26,26,.9);color:#EDE7E0;font-size:11px;padding:6px 10px;border-radius:7px}
+.fx{opacity:0;transform:translateY(14px)}body.js .fx{transition:opacity .5s ease,transform .5s ease}body.js .fx.in{opacity:1;transform:none}
+&lt;/style&gt;
+&lt;style&gt;
+#prices .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px 44px;margin-top:26px}
+#prices .pcol h3{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+#prices .prow{display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+#prices .prow span{color:var(--ink)}
+#prices .prow i{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-3px)}
+#prices .prow b{white-space:nowrap;font-weight:600;color:var(--ink)}
+#prices .pnote{margin-top:22px;font-size:13.5px;color:var(--mut);max-width:78ch}
+#prices .pcta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+@media(max-width:820px){#prices .pgrid{grid-template-columns:1fr;gap:22px}}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body id=&quot;top&quot;&gt;
+&lt;noscript&gt;&lt;style&gt;.fx{opacity:1!important;transform:none!important}&lt;/style&gt;&lt;/noscript&gt;
+&lt;div class=&quot;top&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;&lt;span class=&quot;l&quot;&gt;Мотуз — электромонтажные работы&lt;/span&gt;&lt;span class=&quot;r&quot;&gt;&lt;a href=&quot;tel:+375296540049&quot;&gt;+375 (29) 654-00-49&lt;/a&gt;&lt;a href=&quot;tel:+375298348560&quot;&gt;+375 (29) 834-85-60&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;header&gt;&lt;div class=&quot;hr&quot;&gt;&lt;a href=&quot;#top&quot; class=&quot;brand&quot;&gt;&lt;b&gt;ИП Мотуз А.П.&lt;/b&gt;&lt;small&gt;электромонтаж · Минск&lt;/small&gt;&lt;/a&gt;&lt;nav class=&quot;m&quot;&gt;&lt;a href=&quot;#calc&quot;&gt;Смета&lt;/a&gt;&lt;a href=&quot;#services&quot;&gt;Услуги&lt;/a&gt;&lt;a href=&quot;#prices&quot;&gt;Прайс&lt;/a&gt;&lt;a href=&quot;#work&quot;&gt;Работы&lt;/a&gt;&lt;a href=&quot;#how&quot;&gt;Порядок&lt;/a&gt;&lt;a href=&quot;#about&quot;&gt;О мастере&lt;/a&gt;&lt;/nav&gt;&lt;a class=&quot;tel&quot; href=&quot;tel:+375296540049&quot;&gt;+375 (29) 654-00-49&lt;/a&gt;&lt;/div&gt;&lt;/header&gt;
+&lt;main&gt;
+&lt;section class=&quot;hero&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;&lt;div class=&quot;g&quot;&gt;
+&lt;div&gt;
+&lt;div class=&quot;kick&quot;&gt;Минск — отвечаю в течение 3 часов&lt;/div&gt;
+&lt;h1&gt;Электрика, к которой не придётся возвращаться&lt;/h1&gt;
+&lt;p class=&quot;sub&quot;&gt;Электрик для квартир, загородных домов, офисов и магазинов: проводка, светильники, розетки и щиты. Помогу с выбором материалов, все работы — качественно и в кратчайшие сроки.&lt;/p&gt;
+&lt;div class=&quot;acts&quot;&gt;&lt;a class=&quot;btn p&quot; href=&quot;tel:+375296540049&quot;&gt;Позвонить: +375 (29) 654-00-49&lt;/a&gt;&lt;a class=&quot;btn g&quot; href=&quot;#calc&quot;&gt;Собрать смету по точкам&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;mini&quot;&gt;&lt;div&gt;&lt;b&gt;с 2016 на Kufar&lt;/b&gt;&lt;span&gt;10 объявлений, десятки объектов&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;до 3 часов&lt;/b&gt;&lt;span&gt;время ответа на заявку&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;под ключ&lt;/b&gt;&lt;span&gt;от трассы до щита&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;hphoto&quot;&gt;&lt;img src=&quot;assets/hero-wall.jpg&quot; alt=&quot;Розетки и выключатели в тёплой бежевой стене (иллюстративное изображение)&quot;&gt;&lt;div class=&quot;badge&quot;&gt;&lt;b&gt;до 3 часов&lt;/b&gt;время ответа&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;section class=&quot;sec&quot; id=&quot;calc&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+&lt;div class=&quot;sh&quot;&gt;&lt;div&gt;&lt;div class=&quot;lbl&quot;&gt;Конструктор точек&lt;/div&gt;&lt;h2 class=&quot;t&quot;&gt;Посчитайте свою электрику&lt;/h2&gt;&lt;/div&gt;&lt;p&gt;Отметьте, сколько точек нужно: розетки, выключатели, светильники — смета пересчитается сразу. Точную цену назову после осмотра.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;calc fx&quot;&gt;
+&lt;div class=&quot;cL&quot;&gt;&lt;h3&gt;Точки в помещении&lt;/h3&gt;&lt;div class=&quot;note&quot;&gt;Считаем вместе с подключением и подрозетниками&lt;/div&gt;
+&lt;div class=&quot;crow&quot;&gt;&lt;div class=&quot;nm&quot;&gt;Розетки&lt;span&gt;15 р. за точку&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;stepper&quot;&gt;&lt;button type=&quot;button&quot; data-k=&quot;sockets&quot; data-d=&quot;-1&quot;&gt;−&lt;/button&gt;&lt;span class=&quot;val&quot; id=&quot;vSockets&quot;&gt;6&lt;/span&gt;&lt;button type=&quot;button&quot; data-k=&quot;sockets&quot; data-d=&quot;1&quot;&gt;+&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;crow&quot;&gt;&lt;div class=&quot;nm&quot;&gt;Выключатели&lt;span&gt;15 р. за точку&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;stepper&quot;&gt;&lt;button type=&quot;button&quot; data-k=&quot;switches&quot; data-d=&quot;-1&quot;&gt;−&lt;/button&gt;&lt;span class=&quot;val&quot; id=&quot;vSwitches&quot;&gt;3&lt;/span&gt;&lt;button type=&quot;button&quot; data-k=&quot;switches&quot; data-d=&quot;1&quot;&gt;+&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;crow&quot;&gt;&lt;div class=&quot;nm&quot;&gt;Светильники&lt;span&gt;20 р. за прибор&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;stepper&quot;&gt;&lt;button type=&quot;button&quot; data-k=&quot;lamps&quot; data-d=&quot;-1&quot;&gt;−&lt;/button&gt;&lt;span class=&quot;val&quot; id=&quot;vLamps&quot;&gt;5&lt;/span&gt;&lt;button type=&quot;button&quot; data-k=&quot;lamps&quot; data-d=&quot;1&quot;&gt;+&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;togs&quot;&gt;&lt;label class=&quot;tog&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;tTrass&quot; checked&gt;Монтаж новой проводки к точкам (трассы + кабель)&lt;/label&gt;&lt;label class=&quot;tog&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;tStrob&quot;&gt;Штробление стен под трассы&lt;/label&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cR&quot;&gt;&lt;div class=&quot;lab&quot;&gt;Ориентировочная смета&lt;/div&gt;&lt;div class=&quot;sum&quot;&gt;от &lt;span id=&quot;sumVal&quot;&gt;347&lt;/span&gt; &lt;small&gt;р.&lt;/small&gt;&lt;/div&gt;&lt;ul class=&quot;brk&quot; id=&quot;brk&quot;&gt;&lt;/ul&gt;&lt;a class=&quot;go&quot; href=&quot;tel:+375296540049&quot; id=&quot;callBtn&quot;&gt;Уточнить по телефону&lt;/a&gt;&lt;div class=&quot;hint&quot;&gt;Сумма ориентировочная: точная стоимость — после осмотра объекта, зависит от состояния проводки и материалов.&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;section class=&quot;sec white&quot; id=&quot;services&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+&lt;div class=&quot;sh&quot;&gt;&lt;div&gt;&lt;div class=&quot;lbl&quot;&gt;Услуги&lt;/div&gt;&lt;h2 class=&quot;t&quot;&gt;Что делаю&lt;/h2&gt;&lt;/div&gt;&lt;p&gt;Цены ориентировочные. Точная стоимость договорная — зависит от объекта, состояния проводки и материалов, называется после осмотра.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;srv&quot;&gt;
+&lt;div class=&quot;sc fx&quot;&gt;&lt;h3&gt;Монтаж и замена проводки&lt;/h3&gt;&lt;p&gt;Полная разводка в квартире или доме: трассы, кабель, соединения, проверка линии.&lt;/p&gt;&lt;div class=&quot;pr&quot;&gt;от 25 р./точка&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;sc fx&quot;&gt;&lt;h3&gt;Светильники&lt;/h3&gt;&lt;p&gt;Люстры, бра, точечные и трековые светильники — монтаж и подключение.&lt;/p&gt;&lt;div class=&quot;pr&quot;&gt;от 20 р./прибор&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;sc fx&quot;&gt;&lt;h3&gt;Розетки и выключатели&lt;/h3&gt;&lt;p&gt;Установка розеток, выключателей, распределителей и их подключение.&lt;/p&gt;&lt;div class=&quot;pr&quot;&gt;от 15 р./точка&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;sc fx&quot;&gt;&lt;h3&gt;Распределительные щиты&lt;/h3&gt;&lt;p&gt;Сборка и монтаж щитов: автоматы, УЗО, подписанные линии.&lt;/p&gt;&lt;div class=&quot;pr&quot;&gt;от 100 р./щит&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;sc fx&quot;&gt;&lt;h3&gt;Штробление и подрозетники&lt;/h3&gt;&lt;p&gt;Штробление стен и потолка, установка подрозетников — сопутствующие работы.&lt;/p&gt;&lt;div class=&quot;pr&quot;&gt;от 8 р./м.п.&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;sc fx&quot;&gt;&lt;h3&gt;Закупка и консультации&lt;/h3&gt;&lt;p&gt;Помогу с выбором материалов, закуплю по согласованию, подскажу оптимальные решения.&lt;/p&gt;&lt;div class=&quot;pr&quot;&gt;консультация 0 р.&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;srvnote&quot;&gt;Цены набл. Точная стоимость договорная — зависит от объекта, состояния проводки и материалов, называется после осмотра.&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;section class=&quot;sec&quot; id=&quot;work&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+&lt;div class=&quot;sh&quot;&gt;&lt;div&gt;&lt;div class=&quot;lbl&quot;&gt;На объекте&lt;/div&gt;&lt;h2 class=&quot;t&quot;&gt;Как это выглядит в работе&lt;/h2&gt;&lt;/div&gt;&lt;p&gt;Сборка щитов, установка точек, подключение света — всё аккуратно и с проверкой каждой линии.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;gal&quot;&gt;
+&lt;figure class=&quot;fx&quot;&gt;&lt;img src=&quot;assets/board.jpg&quot; alt=&quot;Сборка распределительного щита (иллюстративное изображение)&quot;&gt;&lt;figcaption&gt;Сборка распределительного щита&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;fx&quot;&gt;&lt;img src=&quot;assets/socket.jpg&quot; alt=&quot;Установка розетки в подрозетник (иллюстративное изображение)&quot;&gt;&lt;figcaption&gt;Установка розетки в подрозетник&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;fx&quot;&gt;&lt;img src=&quot;assets/lamp-ceiling.jpg&quot; alt=&quot;Подключение потолочного светильника (иллюстративное изображение)&quot;&gt;&lt;figcaption&gt;Подключение потолочного светильника&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;section class=&quot;sec&quot; id=&quot;prices&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+&lt;div class=&quot;sh&quot;&gt;&lt;div&gt;&lt;div class=&quot;lbl&quot;&gt;Прайс&lt;/div&gt;&lt;h2 class=&quot;t&quot;&gt;Сколько стоит работа&lt;/h2&gt;&lt;/div&gt;&lt;p&gt;Ориентировочные цены по Минску — все указаны как «от». Итог зависит от материала стен, количества точек, доступа и состояния проводки: точную смету называю до начала работ.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;pgrid&quot;&gt;&lt;div class=&quot;pcol&quot;&gt;&lt;h3&gt;Выезд и диагностика&lt;/h3&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Выезд мастера по Минску&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 15 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Диагностика неисправности&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 20 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Поиск обрыва или КЗ в линии&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 30 р&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;pcol&quot;&gt;&lt;h3&gt;Розетки и выключатели&lt;/h3&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Установка розетки (бетон, кирпич)&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 15 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Установка розетки в гипсокартон&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 12 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Установка выключателя&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 12 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Перенос розетки или выключателя&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 25 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Розетка 380 В&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 25 р&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;pcol&quot;&gt;&lt;h3&gt;Свет&lt;/h3&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Монтаж люстры&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 20 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Сложная люстра: сборка и навеска&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 75 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Точечный светильник&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 8 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Бра&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 15 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Светодиодная лента&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 15 р/м&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;pcol&quot;&gt;&lt;h3&gt;Щиты и автоматика&lt;/h3&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Сборка и монтаж щита до 12 модулей&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 100 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Замена автомата&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 10 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Установка УЗО или дифавтомата&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 15 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Реле напряжения&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 25 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Замена электросчётчика&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 40 р&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;pcol&quot;&gt;&lt;h3&gt;Проводка и штробление&lt;/h3&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Прокладка кабеля в гофре&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 3 р/м&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Штробление бетона&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 10 р/м&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Штробление кирпича и газобетона&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 7 р/м&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Монтаж проводки под ключ&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 25 р/точка&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;pcol&quot;&gt;&lt;h3&gt;Дополнительно&lt;/h3&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Тёплый пол: монтаж&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 15 р/м²&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Подключение варочной панели&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 25 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Подключение стиральной или посудомоечной машины&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 20 р&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;prow&quot;&gt;&lt;span&gt;Контур заземления&lt;/span&gt;&lt;i&gt;&lt;/i&gt;&lt;b&gt;от 30 р/м&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;pnote&quot;&gt;В стоимость входит работа мастера. Материалы — по согласованию: могу привезти свои или работать с вашими. Цены действительны для Минска; выезд за МКАД — по договорённости.&lt;/div&gt;
+&lt;div class=&quot;pcta&quot;&gt;&lt;a class=&quot;go&quot; href=&quot;tel:+375296540049&quot;&gt;Уточнить цену по телефону&lt;/a&gt;&lt;a class=&quot;go&quot; href=&quot;#calc&quot; style=&quot;background:transparent;color:var(--ink);border:1px solid var(--line)&quot;&gt;Посчитать смету&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;section class=&quot;sec white&quot; id=&quot;how&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+&lt;div class=&quot;sh&quot;&gt;&lt;div&gt;&lt;div class=&quot;lbl&quot;&gt;Как я работаю&lt;/div&gt;&lt;h2 class=&quot;t&quot;&gt;От звонка до включённого света&lt;/h2&gt;&lt;/div&gt;&lt;p&gt;Без «приеду и посмотрю на месте»: сначала смета, потом работы. Сумма не меняется по ходу.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;steps&quot;&gt;
+&lt;div class=&quot;st fx&quot;&gt;&lt;div class=&quot;n&quot;&gt;01&lt;/div&gt;&lt;h3&gt;Осмотр&lt;/h3&gt;&lt;p&gt;Оценка состояния объекта, расчёт стоимости, планирование.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;st fx&quot;&gt;&lt;div class=&quot;n&quot;&gt;02&lt;/div&gt;&lt;h3&gt;Смета&lt;/h3&gt;&lt;p&gt;Работы и материалы, оптимальные решения.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;st fx&quot;&gt;&lt;div class=&quot;n&quot;&gt;03&lt;/div&gt;&lt;h3&gt;Монтаж&lt;/h3&gt;&lt;p&gt;Трассы, кабели, точки, щит — быстро и аккуратно.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;st fx&quot;&gt;&lt;div class=&quot;n&quot;&gt;04&lt;/div&gt;&lt;h3&gt;Проверка&lt;/h3&gt;&lt;p&gt;Протяжка цепей, тест каждой точки, включение света.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;section class=&quot;sec&quot; id=&quot;about&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;&lt;div class=&quot;about&quot;&gt;
+&lt;div&gt;&lt;div class=&quot;lbl&quot;&gt;О мастере&lt;/div&gt;&lt;h2 class=&quot;t&quot;&gt;ИП Мотуз А.П.&lt;/h2&gt;&lt;p style=&quot;font-size:13.5px;line-height:1.65;color:#6E675F;margin-top:8px&quot;&gt;Работаю сам, без подрядчиков: приезжает тот, кто и будет делать. С 2016 года на Kufar, за это время — десятки квартир, домов и коммерческих объектов в Минске и районе.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;bgrid fx&quot;&gt;
+&lt;div class=&quot;bd&quot;&gt;&lt;b&gt;УНП 193557539&lt;/b&gt;&lt;span&gt;официальный ИП&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;bd&quot;&gt;&lt;b&gt;с мая 2016&lt;/b&gt;&lt;span&gt;на Kufar, 10 объявлений&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;bd&quot;&gt;&lt;b&gt;Александр&lt;/b&gt;&lt;span&gt;ваш мастер — я&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;bd&quot;&gt;&lt;b&gt;Минск&lt;/b&gt;&lt;span&gt;все районы и Минский район&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;/main&gt;
+&lt;footer class=&quot;foot&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;&lt;div class=&quot;g&quot;&gt;
+&lt;div&gt;&lt;h2&gt;Хорошая электрика делается один раз. Давайте сделаем так.&lt;/h2&gt;&lt;p&gt;Проводка, розетки, свет и щиты в Минске и Минском районе. Позвоните — отвечу в течение 3 часов, посчитаю смету и подскажу по материалам.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;ftel&quot;&gt;&lt;a href=&quot;tel:+375296540049&quot;&gt;+375 (29) 654-00-49&lt;/a&gt;&lt;a href=&quot;tel:+375298348560&quot;&gt;+375 (29) 834-85-60&lt;/a&gt;&lt;a class=&quot;fbtn&quot; href=&quot;tel:+375296540049&quot;&gt;Позвонить →&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;fbot&quot;&gt;&lt;span&gt;ИП Мотуз А.П. | УНП 193557539 | Минск | Электромонтажные работы — проводка — щиты — свет&lt;/span&gt;&lt;span&gt;Макет: SiteFast.by&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/footer&gt;
+&lt;div id=&quot;wm&quot;&gt;Макет: SiteFast.by&lt;/div&gt;
+&lt;script&gt;
+document.body.classList.add(&quot;js&quot;);
+function E(i){return document.getElementById(i)}
+var PRICE={sockets:15,switches:15,lamps:20,trass:8,strob:5};
+var st={sockets:6,switches:3,lamps:5,trass:true,strob:false};
+function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,&quot; &quot;)}
+function calc(){
+  var total=st.sockets*PRICE.sockets+st.switches*PRICE.switches+st.lamps*PRICE.lamps;
+  var pts=st.sockets+st.switches+st.lamps;
+  var rows=[];
+  if(st.sockets)rows.push([&quot;Розетки — &quot;+st.sockets+&quot; × &quot;+PRICE.sockets+&quot; р.&quot;,st.sockets*PRICE.sockets]);
+  if(st.switches)rows.push([&quot;Выключатели — &quot;+st.switches+&quot; × &quot;+PRICE.switches+&quot; р.&quot;,st.switches*PRICE.switches]);
+  if(st.lamps)rows.push([&quot;Светильники — &quot;+st.lamps+&quot; × &quot;+PRICE.lamps+&quot; р.&quot;,st.lamps*PRICE.lamps]);
+  if(st.trass&amp;&amp;pts){var t=pts*PRICE.trass;total+=t;rows.push([&quot;Трассы и кабель — &quot;+pts+&quot; точек × &quot;+PRICE.trass+&quot; р.&quot;,t]);}
+  if(st.strob&amp;&amp;pts){var s=pts*PRICE.strob;total+=s;rows.push([&quot;Штробление — &quot;+pts+&quot; × &quot;+PRICE.strob+&quot; р.&quot;,s]);}
+  E(&quot;sumVal&quot;).textContent=fmt(total);
+  var brk=E(&quot;brk&quot;);if(brk){brk.innerHTML=&quot;&quot;;for(var i=0;i&lt;rows.length;i++){var li=document.createElement(&quot;li&quot;);li.innerHTML=&quot;&lt;span&gt;&quot;+rows[i][0]+&quot;&lt;/span&gt;&lt;b&gt;&quot;+fmt(rows[i][1])+&quot; р.&lt;/b&gt;&quot;;brk.appendChild(li);}if(!rows.length){var e=document.createElement(&quot;li&quot;);e.innerHTML=&quot;&lt;span&gt;Отметьте точки&lt;/span&gt;&lt;b&gt;0 р.&lt;/b&gt;&quot;;brk.appendChild(e);}}
+  var cb=E(&quot;callBtn&quot;);if(cb)cb.textContent=&quot;Уточнить по телефону&quot;;
+}
+var wrap=document.querySelector(&quot;.calc&quot;);
+if(wrap){wrap.addEventListener(&quot;click&quot;,function(e){var b=e.target.closest(&quot;button[data-k]&quot;);if(!b)return;var k=b.getAttribute(&quot;data-k&quot;),d=parseInt(b.getAttribute(&quot;data-d&quot;),10);var lim=k===&quot;lamps&quot;?40:60;st[k]=Math.max(0,Math.min(lim,st[k]+d));var ids={sockets:&quot;vSockets&quot;,switches:&quot;vSwitches&quot;,lamps:&quot;vLamps&quot;};var el=E(ids[k]);if(el)el.textContent=st[k];calc();});
+E(&quot;tTrass&quot;).addEventListener(&quot;change&quot;,function(e){st.trass=e.target.checked;calc();});
+E(&quot;tStrob&quot;).addEventListener(&quot;change&quot;,function(e){st.strob=e.target.checked;calc();});}
+calc();
+window.__wow={render:function(q){setCounts(Math.round(q*12),Math.round(q*8),Math.round(q*10),q&gt;0.5,false);return true},setCounts:setCounts};
+function setCounts(a,b,c,tr,str){st.sockets=a;st.switches=b;st.lamps=c;st.trass=tr;st.strob=str;var ids={sockets:&quot;vSockets&quot;,switches:&quot;vSwitches&quot;,lamps:&quot;vLamps&quot;};E(&quot;vSockets&quot;)&amp;&amp;(E(&quot;vSockets&quot;).textContent=a);E(&quot;vSwitches&quot;)&amp;&amp;(E(&quot;vSwitches&quot;).textContent=b);E(&quot;vLamps&quot;)&amp;&amp;(E(&quot;vLamps&quot;).textContent=c);if(E(&quot;tTrass&quot;))E(&quot;tTrass&quot;).checked=tr;if(E(&quot;tStrob&quot;))E(&quot;tStrob&quot;).checked=str;calc();}
+var done=false;function scan(){if(done)return;var els=document.querySelectorAll(&quot;.fx:not(.in)&quot;);for(var i=0;i&lt;els.length;i++){var r=els[i].getBoundingClientRect();if(r.top&lt;(window.innerHeight||800)-40)els[i].classList.add(&quot;in&quot;);}if(!els.length)done=true;}setInterval(scan,400);window.addEventListener(&quot;scroll&quot;,scan,{passive:true});scan();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<script>
+document.getElementById('cp').addEventListener('click',function(){
+  var t=document.getElementById('code').innerText;
+  function ok(){var b=this;b.textContent='Скопировано ✓';setTimeout(function(){b.textContent='Копировать весь код'},1800)}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok.bind(this)).catch(fb)}else{fb()}
+  function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();ok.call(document.getElementById('cp'))}
+});
+</script>
+</body></html>
