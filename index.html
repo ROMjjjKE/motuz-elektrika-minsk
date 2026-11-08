@@ -26,11 +26,22 @@ header{background:var(--bg);border-bottom:1px solid var(--line)}.hr{display:flex
 .foot{background:var(--dark);color:#EDE7E0;padding:46px 0 24px}.foot .g{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}@media(max-width:860px){.foot .g{grid-template-columns:1fr}}.foot h2{font-size:clamp(23px,3vw,34px);font-weight:600;line-height:1.25;color:#fff;margin-bottom:12px}.foot p{font-size:13.5px;line-height:1.6;color:#B4ADA4;max-width:400px}.ftel{display:flex;flex-direction:column;gap:8px}.ftel a{font-family:"Onest";font-size:clamp(20px,2.4vw,26px);font-weight:600;color:#fff}.ftel a:hover{color:var(--acc)}.fbtn{display:inline-flex;align-items:center;gap:8px;margin-top:12px;background:var(--acc);color:#1A1A1A;font-weight:600;font-size:14.5px;padding:12px 18px;border-radius:8px;width:max-content}.fbtn:hover{background:#B99A80}.fbot{border-top:1px solid #33302D;margin-top:26px;padding-top:14px;font-size:11.5px;color:#8C857D;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}#wm{position:fixed;right:14px;bottom:14px;z-index:75;background:rgba(26,26,26,.9);color:#EDE7E0;font-size:11px;padding:6px 10px;border-radius:7px}
 .fx{opacity:0;transform:translateY(14px)}body.js .fx{transition:opacity .5s ease,transform .5s ease}body.js .fx.in{opacity:1;transform:none}
 </style>
+<style>
+#prices .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px 44px;margin-top:26px}
+#prices .pcol h3{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+#prices .prow{display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+#prices .prow span{color:var(--ink)}
+#prices .prow i{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-3px)}
+#prices .prow b{white-space:nowrap;font-weight:600;color:var(--ink)}
+#prices .pnote{margin-top:22px;font-size:13.5px;color:var(--mut);max-width:78ch}
+#prices .pcta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+@media(max-width:820px){#prices .pgrid{grid-template-columns:1fr;gap:22px}}
+</style>
 </head>
 <body id="top">
 <noscript><style>.fx{opacity:1!important;transform:none!important}</style></noscript>
 <div class="top"><div class="wrap"><span class="l">Мотуз — электромонтажные работы</span><span class="r"><a href="tel:+375296540049">+375 (29) 654-00-49</a><a href="tel:+375298348560">+375 (29) 834-85-60</a></span></div></div>
-<header><div class="hr"><a href="#top" class="brand"><b>ИП Мотуз А.П.</b><small>электромонтаж · Минск</small></a><nav class="m"><a href="#calc">Смета</a><a href="#services">Услуги</a><a href="#work">Работы</a><a href="#how">Порядок</a><a href="#about">О мастере</a></nav><a class="tel" href="tel:+375296540049">+375 (29) 654-00-49</a></div></header>
+<header><div class="hr"><a href="#top" class="brand"><b>ИП Мотуз А.П.</b><small>электромонтаж · Минск</small></a><nav class="m"><a href="#calc">Смета</a><a href="#services">Услуги</a><a href="#prices">Прайс</a><a href="#work">Работы</a><a href="#how">Порядок</a><a href="#about">О мастере</a></nav><a class="tel" href="tel:+375296540049">+375 (29) 654-00-49</a></div></header>
 <main>
 <section class="hero"><div class="wrap"><div class="g">
 <div>
@@ -72,6 +83,12 @@ header{background:var(--bg);border-bottom:1px solid var(--line)}.hr{display:flex
 <figure class="fx"><img src="assets/socket.jpg" alt="Установка розетки в подрозетник (иллюстративное изображение)"><figcaption>Установка розетки в подрозетник</figcaption></figure>
 <figure class="fx"><img src="assets/lamp-ceiling.jpg" alt="Подключение потолочного светильника (иллюстративное изображение)"><figcaption>Подключение потолочного светильника</figcaption></figure>
 </div></div></section>
+<section class="sec" id="prices"><div class="wrap">
+<div class="sh"><div><div class="lbl">Прайс</div><h2 class="t">Сколько стоит работа</h2></div><p>Ориентировочные цены по Минску — все указаны как «от». Итог зависит от материала стен, количества точек, доступа и состояния проводки: точную смету называю до начала работ.</p></div>
+<div class="pgrid"><div class="pcol"><h3>Выезд и диагностика</h3><div class="prow"><span>Выезд мастера по Минску</span><i></i><b>от 15 р</b></div><div class="prow"><span>Диагностика неисправности</span><i></i><b>от 20 р</b></div><div class="prow"><span>Поиск обрыва или КЗ в линии</span><i></i><b>от 30 р</b></div></div><div class="pcol"><h3>Розетки и выключатели</h3><div class="prow"><span>Установка розетки (бетон, кирпич)</span><i></i><b>от 15 р</b></div><div class="prow"><span>Установка розетки в гипсокартон</span><i></i><b>от 12 р</b></div><div class="prow"><span>Установка выключателя</span><i></i><b>от 12 р</b></div><div class="prow"><span>Перенос розетки или выключателя</span><i></i><b>от 25 р</b></div><div class="prow"><span>Розетка 380 В</span><i></i><b>от 25 р</b></div></div><div class="pcol"><h3>Свет</h3><div class="prow"><span>Монтаж люстры</span><i></i><b>от 20 р</b></div><div class="prow"><span>Сложная люстра: сборка и навеска</span><i></i><b>от 75 р</b></div><div class="prow"><span>Точечный светильник</span><i></i><b>от 8 р</b></div><div class="prow"><span>Бра</span><i></i><b>от 15 р</b></div><div class="prow"><span>Светодиодная лента</span><i></i><b>от 15 р/м</b></div></div><div class="pcol"><h3>Щиты и автоматика</h3><div class="prow"><span>Сборка и монтаж щита до 12 модулей</span><i></i><b>от 100 р</b></div><div class="prow"><span>Замена автомата</span><i></i><b>от 10 р</b></div><div class="prow"><span>Установка УЗО или дифавтомата</span><i></i><b>от 15 р</b></div><div class="prow"><span>Реле напряжения</span><i></i><b>от 25 р</b></div><div class="prow"><span>Замена электросчётчика</span><i></i><b>от 40 р</b></div></div><div class="pcol"><h3>Проводка и штробление</h3><div class="prow"><span>Прокладка кабеля в гофре</span><i></i><b>от 3 р/м</b></div><div class="prow"><span>Штробление бетона</span><i></i><b>от 10 р/м</b></div><div class="prow"><span>Штробление кирпича и газобетона</span><i></i><b>от 7 р/м</b></div><div class="prow"><span>Монтаж проводки под ключ</span><i></i><b>от 25 р/точка</b></div></div><div class="pcol"><h3>Дополнительно</h3><div class="prow"><span>Тёплый пол: монтаж</span><i></i><b>от 15 р/м²</b></div><div class="prow"><span>Подключение варочной панели</span><i></i><b>от 25 р</b></div><div class="prow"><span>Подключение стиральной или посудомоечной машины</span><i></i><b>от 20 р</b></div><div class="prow"><span>Контур заземления</span><i></i><b>от 30 р/м</b></div></div></div>
+<div class="pnote">В стоимость входит работа мастера. Материалы — по согласованию: могу привезти свои или работать с вашими. Цены действительны для Минска; выезд за МКАД — по договорённости.</div>
+<div class="pcta"><a class="go" href="tel:+375296540049">Уточнить цену по телефону</a><a class="go" href="#calc" style="background:transparent;color:var(--ink);border:1px solid var(--line)">Посчитать смету</a></div>
+</div></section>
 <section class="sec white" id="how"><div class="wrap">
 <div class="sh"><div><div class="lbl">Как я работаю</div><h2 class="t">От звонка до включённого света</h2></div><p>Без «приеду и посмотрю на месте»: сначала смета, потом работы. Сумма не меняется по ходу.</p></div>
 <div class="steps">
